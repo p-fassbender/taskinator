@@ -78,6 +78,7 @@ var createTaskActions = function(taskId) {
         var statusOptionEl = document.createElement("option");
         statusOptionEl.textContent = statusChoices[i];
         statusOptionEl.setAttribute("value", statusChoices[i]);
+        statusSelectEl.appendChild(statusOptionEl);
     }
 
     return actionContainerEl;
