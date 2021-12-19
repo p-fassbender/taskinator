@@ -51,6 +51,7 @@ var createTaskEl = function(taskDataObj) {
     var taskActionsEl = createTaskActions(taskIdCounter);
     listItemEl.appendChild(taskActionsEl);
 
+    // status check to create tasks in correct column upon reload
     switch (taskDataObj.status) {
         case "to do":
             taskActionsEl.querySelector("select[name='status-change']").selectedIndex = 0;
